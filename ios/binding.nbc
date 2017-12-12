@@ -1,0 +1,1 @@
+{"output":"src/main/java","platform":"iOS","bindings":[{"type":"framework","name":"Charts","objcClassGenerationMode":"Binding","frameworkPath":"build/moe/xcodebuild/Debug-iphonesimulator/Charts.framework","packageBase":"org.devmaster.binding","importCode":"#import <Charts/Charts-umbrella.h>\n#import <Charts/Charts-Swift.h>"}]}

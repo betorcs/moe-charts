@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-Dz-UFX">
+                                <rect key="frame" x="16" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85w-u3-OoV" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="49" width="343" height="610"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="85w-u3-OoV" firstAttribute="top" secondItem="rhc-Dz-UFX" secondAttribute="bottom" constant="8" id="20I-19-Xrw"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rhc-Dz-UFX" secondAttribute="trailing" constant="20" symbolic="YES" id="DN8-8g-dAe"/>
+                            <constraint firstItem="85w-u3-OoV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IoJ-5o-8h7"/>
+                            <constraint firstItem="rhc-Dz-UFX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YU0-QY-u9f"/>
+                            <constraint firstItem="85w-u3-OoV" firstAttribute="leading" secondItem="rhc-Dz-UFX" secondAttribute="leading" id="bSe-WS-4g5"/>
+                            <constraint firstItem="85w-u3-OoV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hqw-b6-Mkq"/>
+                            <constraint firstItem="85w-u3-OoV" firstAttribute="top" secondItem="rhc-Dz-UFX" secondAttribute="bottom" constant="8" symbolic="YES" id="oyx-ZJ-HvR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="85w-u3-OoV" secondAttribute="bottom" constant="8" id="riX-qd-KjU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="85w-u3-OoV" id="hiK-ye-aGW"/>
+                        <outlet property="titleLabel" destination="rhc-Dz-UFX" id="zee-ZM-DvF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
